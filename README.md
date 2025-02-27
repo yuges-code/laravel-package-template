@@ -7,7 +7,7 @@
 </div>
 
 <div align="center">
-    <h3>🚀 Starter template for all Yuges packages</h3>
+    <h3>🚀 Starter template for all Yuges Laravel packages</h3>
 </div>
 
 <div align="center">
