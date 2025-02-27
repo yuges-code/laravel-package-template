@@ -1,16 +1,17 @@
 {
-    "name": "yuges-code/php-package-template",
-    "description": "🚀 Starter template for all Yuges php packages",
+    "name": "yuges-code/laravel-package-template",
+    "description": "🚀 Starter template for all Yuges Laravel packages",
     "keywords": [
         "php",
         "yuges",
+        "laravel",
         "package",
         "template"
     ],
-    "homepage": "https://yuges-code.github.io/php-package-template",
+    "homepage": "https://yuges-code.github.io/laravel-package-template",
     "support": {
-        "source": "https://github.com/yuges-code/php-package-template",
-        "issues": "https://github.com/yuges-code/php-package-template/issues"
+        "source": "https://github.com/yuges-code/laravel-package-template",
+        "issues": "https://github.com/yuges-code/laravel-package-template/issues"
     },
     "license": "MIT",
     "authors": [
@@ -24,20 +25,29 @@
         "php": "^8.4"
     },
     "require-dev": {
-        "phpunit/phpunit": "^12.0"
+        "orchestra/testbench": "^10.0"
     },
     "autoload": {
         "psr-4": {
-            "Yuges\\PhpPackageTemplate\\": "src"
+            "Yuges\\LaravelPackageTemplate\\": "src",
+            "Yuges\\LaravelPackageTemplate\\Database\\Seeders\\": "database/seeders/",
+            "Yuges\\LaravelPackageTemplate\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Yuges\\PhpPackageTemplate\\Tests\\": "tests/"
+            "Yuges\\LaravelPackageTemplate\\Tests\\": "tests/"
         }
     },
     "scripts": {
         "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yuges\\LaravelPackageTemplate\\Providers\\TemplateServiceProvider"
+            ]
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true

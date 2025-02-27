@@ -2,7 +2,7 @@
 
 namespace Yuges\PhpPackageTemplate\Tests;
 
-class TestCase extends \PHPUnit\Framework\TestCase
+class TestCase extends \Orchestra\Testbench\TestCase
 {
     protected function setUp(): void
     {

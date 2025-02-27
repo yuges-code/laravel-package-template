@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://raw.githubusercontent.com/yuges-code/php-package-template/master/assets/logo.png">
+    <img src="https://raw.githubusercontent.com/yuges-code/laravel-package-template/master/assets/logo.png">
 </div>
 
 <div align="center">
@@ -11,10 +11,10 @@
 </div>
 
 <div align="center">
-    <img alt="GitHub Release" src="https://img.shields.io/github/v/release/yuges-code/php-package-template">
-    <img alt="Packagist Downloads" src="https://img.shields.io/packagist/dt/yuges-code/php-package-template">
-    <img alt="GitHub License" src="https://img.shields.io/github/license/yuges-code/php-package-template">
-    <img alt="Packagist Stars" src="https://img.shields.io/packagist/stars/yuges-code/php-package-template">
+    <img alt="GitHub Release" src="https://img.shields.io/github/v/release/yuges-code/laravel-package-template">
+    <img alt="Packagist Downloads" src="https://img.shields.io/packagist/dt/yuges-code/laravel-package-template">
+    <img alt="GitHub License" src="https://img.shields.io/github/license/yuges-code/laravel-package-template">
+    <img alt="Packagist Stars" src="https://img.shields.io/packagist/stars/yuges-code/laravel-package-template">
 </div>
 
 # 💿 Installation
@@ -22,8 +22,8 @@
 To use this template, clone the repository and install the dependencies:
 
 ```
-git clone https://github.com/yuges-code/php-package-template.git
-cd php-package-template
+git clone https://github.com/yuges-code/laravel-package-template.git
+cd laravel-package-template
 
 composer install
 ```
