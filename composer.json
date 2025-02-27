@@ -1,0 +1,44 @@
+{
+    "name": "yuges-code/php-package-template",
+    "description": "🚀 Starter template for all Yuges php packages",
+    "keywords": [
+        "php",
+        "yuges",
+        "package",
+        "template"
+    ],
+    "homepage": "https://yuges-code.github.io/php-package-template",
+    "support": {
+        "source": "https://github.com/yuges-code/php-package-template",
+        "issues": "https://github.com/yuges-code/php-package-template/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Georgy",
+            "email": "goshasafonov@yandex.ru",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yuges\\PhpPackageTemplate\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yuges\\PhpPackageTemplate\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
