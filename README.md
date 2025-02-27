@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-    <h1>Package template</h1>
+    <h1>Laravel package template</h1>
 </div>
 
 <div align="center">
