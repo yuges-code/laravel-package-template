@@ -15,6 +15,10 @@
     <img alt="Packagist Downloads" src="https://img.shields.io/packagist/dt/yuges-code/laravel-package-template">
     <img alt="GitHub License" src="https://img.shields.io/github/license/yuges-code/laravel-package-template">
     <img alt="Packagist Stars" src="https://img.shields.io/packagist/stars/yuges-code/laravel-package-template">
+    <img
+        alt="Packagist Dependency Version"
+        src="https://img.shields.io/packagist/dependency-v/yuges-code/laravel-package-template/php"
+    >
 </div>
 
 # 💿 Installation
