@@ -1,6 +1,6 @@
 <?php
 
-namespace Yuges\PhpPackageTemplate\Tests;
+namespace Yuges\Package\Tests;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
