@@ -4,15 +4,24 @@
     xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
     bootstrap="vendor/autoload.php"
     colors="true"
+    displayDetailsOnPhpunitDeprecations="true"
+    displayDetailsOnTestsThatTriggerErrors="true"
+    displayDetailsOnTestsThatTriggerNotices="true"
+    displayDetailsOnTestsThatTriggerWarnings="true"
+    displayDetailsOnTestsThatTriggerDeprecations="true"
 >
     <testsuites>
-        <testsuite name="Yuges Test Suite">
-            <directory>tests</directory>
+        <testsuite name="Yuges unit test suite">
+            <directory>tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Yuges feature test suite">
+            <directory>tests/Feature</directory>
         </testsuite>
     </testsuites>
-    <coverage>
+    <coverage/>
+    <source>
         <include>
-            <directory suffix=".php">./src/</directory>
+            <directory suffix=".php">src</directory>
         </include>
-    </coverage>
+    </source>
 </phpunit>
