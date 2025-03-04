@@ -7,11 +7,11 @@
     <div>
         <img
             alt="GitHub Branch Check Runs"
-            src="https://img.shields.io/github/check-runs/yuges-code/laravel-package/main"
+            src="https://img.shields.io/github/check-runs/yuges-code/laravel-package-template/main"
         >
         <img
             alt="GitHub Tests Action Status"
-            src="https://img.shields.io/github/actions/workflow/status/yuges-code/laravel-package/testing.yml?branch=main&label=tests&style=flat-square"
+            src="https://img.shields.io/github/actions/workflow/status/yuges-code/laravel-package-template/testing.yml?branch=main&label=tests&style=flat-square"
         >
     </div>
 </div>
@@ -19,13 +19,13 @@
 <div align="center">
     <b>Project</b>
     <div>
-        <img alt="GitHub Release" src="https://img.shields.io/github/v/release/yuges-code/laravel-package">
-        <img alt="Packagist Downloads" src="https://img.shields.io/packagist/dt/yuges-code/laravel-package">
-        <img alt="GitHub License" src="https://img.shields.io/github/license/yuges-code/laravel-package">
-        <img alt="Packagist Stars" src="https://img.shields.io/packagist/stars/yuges-code/laravel-package">
+        <img alt="GitHub Release" src="https://img.shields.io/github/v/release/yuges-code/laravel-package-template">
+        <img alt="Packagist Downloads" src="https://img.shields.io/packagist/dt/yuges-code/laravel-package-template">
+        <img alt="GitHub License" src="https://img.shields.io/github/license/yuges-code/laravel-package-template">
+        <img alt="Packagist Stars" src="https://img.shields.io/packagist/stars/yuges-code/laravel-package-template">
         <img
             alt="Packagist Dependency Version"
-            src="https://img.shields.io/packagist/dependency-v/yuges-code/laravel-package/php"
+            src="https://img.shields.io/packagist/dependency-v/yuges-code/laravel-package-template/php"
         >
     </div>
 </div>
