@@ -3,33 +3,30 @@
 namespace Vendor\Template\Providers;
 
 use TypeError;
+use Yuges\Package\Data\Package;
 use Vendor\Template\Config\Config;
 use Vendor\Template\Models\Template;
-use Illuminate\Support\ServiceProvider;
 use Vendor\Template\Observers\TemplateObserver;
+use Yuges\Package\Providers\PackageServiceProvider;
 
-class TemplateServiceProvider extends ServiceProvider
+class TemplateServiceProvider extends PackageServiceProvider
 {
-    public function boot(): void
-    {
-        $class = Config::getTemplateClass();
+    protected string $name = 'laravel-template';
 
-        if (! is_a(new $class, Template::class)) {
+    public function configure(Package $package): void
+    {
+        $class = Config::getTemplateClass(Template::class);
+
+        if (! is_a($class, Template::class, true)) {
             throw new TypeError('Invalid model');
         }
 
-        $class::observe(new TemplateObserver);
-
-        $this->publishes([
-            __DIR__.'/../../config/template.php' => config_path('template.php')
-        ], 'template-config');
-
-        $this->publishes([
-            __DIR__.'/../../database/migrations/' => database_path('migrations')
-        ], 'template-migrations');
-
-        $this->publishes([
-            __DIR__.'/../../database/seeders/' => database_path('seeders')
-        ], 'template-seeders');
+        $package
+            ->hasName($this->name)
+            ->hasConfig('template')
+            ->hasMigrations([
+                'create_template_table',
+            ])
+            ->hasObserver($class, TemplateObserver::class);
     }
 }
